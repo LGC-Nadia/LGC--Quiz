@@ -4,26 +4,31 @@ body {
     padding: 0;
 }
 
+.quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
+    margin-bottom: 20px;
 }
 
 .logo img {
     width: 80px; /* Adjust size as needed */
     height: auto;
+    margin-left: 10px;
+}
+
+.title h1 {
+    font-size: 24px;
     margin-right: 10px;
-}
-
-.title {
-    text-align: right;
-}
-
-.quiz-container {
-    padding: 20px;
 }
 
 .question-wrapper {
