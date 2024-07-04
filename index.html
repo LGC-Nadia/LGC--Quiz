@@ -7,47 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="path_to_your_logo_image" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Gym Subscription Quiz</h1>
+        </div>
+    </header>
+
     <div class="quiz-container">
-        <h1>Find Your Perfect Gym Subscription</h1>
-        <form id="quiz-form">
+        <div class="question-wrapper">
             <div class="question">
-                <p>1. What is your primary fitness goal?</p>
+                <p>What is your primary fitness goal?</p>
                 <label><input type="radio" name="goal" value="weight_loss"> Weight loss</label>
                 <label><input type="radio" name="goal" value="muscle_gain"> Muscle gain</label>
-                <label><input type="radio" name="goal" value="general_fitness"> General fitness</label>
-                <label><input type="radio" name="goal" value="endurance_training"> Endurance training</label>
+                <!-- Add more options as needed -->
             </div>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question-wrapper">
             <div class="question">
-                <p>2. How many times a week do you plan to visit the gym?</p>
+                <p>How many times a week do you plan to visit the gym?</p>
                 <label><input type="radio" name="frequency" value="1-2"> 1-2 times</label>
                 <label><input type="radio" name="frequency" value="3-4"> 3-4 times</label>
-                <label><input type="radio" name="frequency" value="5-6"> 5-6 times</label>
-                <label><input type="radio" name="frequency" value="daily"> Daily</label>
+                <!-- Add more options as needed -->
             </div>
-            <div class="question">
-                <p>3. What time of day do you prefer to work out?</p>
-                <label><input type="radio" name="time" value="morning"> Morning</label>
-                <label><input type="radio" name="time" value="afternoon"> Afternoon</label>
-                <label><input type="radio" name="time" value="evening"> Evening</label>
-                <label><input type="radio" name="time" value="late_night"> Late night</label>
-            </div>
-            <div class="question">
-                <p>4. Which of the following services are you interested in?</p>
-                <label><input type="checkbox" name="services" value="personal_training"> Personal training</label>
-                <label><input type="checkbox" name="services" value="group_classes"> Group classes</label>
-                <label><input type="checkbox" name="services" value="swimming_pool"> Swimming pool</label>
-                <label><input type="checkbox" name="services" value="sauna_spa"> Sauna and spa</label>
-            </div>
-            <div class="question">
-                <p>5. What is your budget for a gym subscription?</p>
-                <label><input type="radio" name="budget" value="low"> Low</label>
-                <label><input type="radio" name="budget" value="medium"> Medium</label>
-                <label><input type="radio" name="budget" value="high"> High</label>
-            </div>
-            <button type="button" onclick="submitQuiz()">Submit</button>
-        </form>
-        <div id="result"></div>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Add more question wrappers for additional questions -->
+
+        <div id="result" class="result"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
